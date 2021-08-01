@@ -12,6 +12,14 @@ $(function() {
         }
     });
  });
- $(function () {
+$(function () {
     $('[data-toggle="tooltip"]').tooltip();
-})
+});
+$(function() {
+    $("#loginButton").click(function(){
+        $("#loginModal").modal('show');
+    });
+    $("#reserveButton").click(function(){
+        $("#reserveModal").modal('show');
+    });
+});

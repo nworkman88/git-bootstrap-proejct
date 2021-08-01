@@ -31,7 +31,7 @@
                     <h2>a better way to camp</h2>
                 </div>
                 <div class="col col-md-4 col-xl-2 mt-4">
-                    <a href="#reserveForm" class="btn btn-info btn-lg text-nowrap" data-toggle="modal" data-target="#reserveModal">Reserve Campsite</a>
+                    <a href="#reserveForm" class="btn btn-info btn-lg text-nowrap" id="reserveButton">Reserve Campsite</a>
                     <!--Code for the tooltip: data-toggle="tooltip" data-html="true" data-placement="bottom" title="Or call us at <br/><strong>1-216-555-1234</strong>"-->
                 </div>
             </div>
@@ -40,7 +40,7 @@
     <div id="reserveModal" class="modal fade" role="dialog">
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
-                <div class="modal-header bg-info text-white">
+                <div class="modal-header">
                     <h3 class="modal-title">Reserve a Campsite</h3>
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
@@ -68,7 +68,7 @@
                                 </div>
                             </div>
                             <div class="form-group row">
-                                <label class="col col-sm-6 col-form-label">Campsite Type</label>
+                                <label class="col-sm-6 col-form-label">Campsite Type</label>
                                 <div class="col-2 btn-group btn-group-toggle" data-toggle="buttons">
                                     <label class="btn btn-success active">
                                         <input type="radio" name="options" id="siteTent" autocomplete="off" checked> Tent
@@ -116,7 +116,7 @@
                     </li>
                 </ul>
                 <span class="navbar-text ml-auto">
-                    <a role="button" data-toggle="modal" data-target="#loginModal">
+                    <a role="button" id="loginButton">
                         <i class="fa fa-sign-in"></i> Login
                     </a>
                 </span>
